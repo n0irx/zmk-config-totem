@@ -111,9 +111,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp AT           &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL          &kp LBRC       &kp CARET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR  &kp KP_PLUS
-        &kp EXCLAMATION  &kp UNDER      &kp MINUS         &kp EQUAL          &kp AMPS       &kp HASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE   &kp KP_MINUS
-&trans  &kp STAR         &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &kp GRAVE  &kp COLON             &kp SEMI               &kp KP_N3   &kp KP_MULTIPLY  &trans
+        &kp AT           &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL          &kp LBRC       &kp CARET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR  &trans
+        &kp EXCLAMATION  &kp UNDER      &kp MINUS         &kp EQUAL          &kp AMPS       &kp HASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE   &trans
+&trans  &kp STAR         &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &kp GRAVE  &kp COLON             &kp SEMI               &trans      &trans  &trans
                                         &trans            &trans             &trans         &mo ADJ    &kp KP_N0             &trans
             >;
         };
