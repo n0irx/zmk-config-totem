@@ -147,10 +147,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5     &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0
-        &trans        &trans        &kp MINUS     &kp EQUAL     &kp BACKSPACE    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
-&trans  &kp ASTERISK  &kp PLUS      &trans        &trans        &trans           &trans          &trans          &trans        &trans           &trans         &trans
-                                    &trans        &gif          &mo ADJ          &trans          &kp C_PP        &trans
+           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0
+           &trans        &trans        &trans        &trans        &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
+&kp MINUS  &trans        &trans        &trans        &trans        &trans          &trans          &trans          &trans        &trans           &trans         &trans
+                                       &trans        &gif          &mo ADJ         &trans          &kp C_PP        &trans
             >;
         };
 
