@@ -14,6 +14,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NAV  1
@@ -146,7 +147,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q                       &kp W               &kp E             &kp R                       &kp T                 &kp Y        &kp U            &kp I      &kp O               &kp P
+       &lt 3 Q                     &kp W               &kp E             &kp R                       &kp T                 &kp Y        &kp U            &kp I      &kp O               &kp P
        &mt LEFT_ALT A              &mt LEFT_CONTROL S  &mt LEFT_SHIFT D  &kp F                       &kp G                 &kp H        &kp J            &kp K      &mt L LEFT_CONTROL  &mt SQT LEFT_ALT
 &mo 3  &mt LS(LA(LEFT_CONTROL)) Z  &kp X               &kp C             &kp V                       &kp B                 &kp N        &kp M            &kp COMMA  &kp DOT             &kp SLASH         &kp SEMICOLON
                                                        &trans            &mt_hold LEFT_SHIFT ESCAPE  &mt LEFT_GUI SPACE    &lt 2 ENTER  &lt 1 BACKSPACE  &trans
@@ -194,19 +195,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0
-           &trans        &kp HOME      &trans        &trans        &kp END         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
-&kp MINUS  &trans        &trans        &trans        &trans        &trans          &trans          &trans          &trans        &trans           &trans         &trans
-                                       &trans        &gif          &mo 4           &trans          &kp C_PP        &trans
+           &kp NUMBER_1  &kp NUMBER_2           &kp NUMBER_3   &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0
+           &kp LEFT_ALT  &mt LEFT_CONTROL HOME  &kp PAGE_DOWN  &kp PAGE_UP   &kp END         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
+&kp MINUS  &trans        &trans                 &trans         &trans        &trans          &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans         &trans
+                                                &trans         &gif          &mo 4           &trans          &kp C_PP        &trans
             >;
         };
 
         fun_layer {
             bindings = <
-        &LockScreen  &CloseWindow  &trans  &ScreenShoot  &ReviveWindow    &trans  &trans  &trans  &trans  &trans
-        &trans       &trans        &trans  &trans        &trans           &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans        &trans  &trans        &trans           &trans  &trans  &trans  &trans  &trans  &trans
-                                   &trans  &trans        &trans           &trans  &trans  &trans
+        &LockScreen  &CloseWindow    &mmv MOVE_UP    &ScreenShoot     &ReviveWindow    &trans  &trans  &trans  &trans  &trans
+        &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans          &trans          &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans
+                                     &mkp MCLK       &mkp LCLK        &mkp RCLK        &trans  &trans  &trans
             >;
         };
 
