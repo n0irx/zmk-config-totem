@@ -33,12 +33,6 @@
     combos {
         compatible = "zmk,combos";
 
-        Esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <23 24>;
-            timeout-ms = <30>;
-        };
-
         Meh1 {
             bindings = <&kp LS(LA(LC(NUMBER_1)))>;
             key-positions = <6 7 8>;
@@ -62,7 +56,7 @@
 
         Tab {
             bindings = <&kp TAB>;
-            key-positions = <23 22>;
+            key-positions = <23 24>;
             timeout-ms = <30>;
         };
     };
@@ -152,10 +146,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                      &mt LEFT_ALT Q    &kp W  &kp E      &kp R                       &kp T                             &kp Y        &kp U            &kp I      &kp O    &kp P
-                      &kp A             &kp S  &kp D      &kp F                       &kp G                             &kp H        &kp J            &kp K      &kp L    &kp SQT
-&mt LEFT_CONTROL TAB  &mt LEFT_SHIFT Z  &kp X  &kp C      &kp V                       &kp B                             &kp N        &kp M            &kp COMMA  &kp DOT  &kp SLASH  &kp SEMICOLON
-                                               &powerCMD  &mt_hold LEFT_SHIFT ESCAPE  &mt LA(LS(LEFT_CONTROL)) SPACE    &lt 2 ENTER  &lt 1 BACKSPACE  &mo 4
+                      &kp Q                       &kp W               &kp E      &kp R                       &kp T                 &kp Y        &kp U            &kp I      &kp O    &kp P
+                      &mt LEFT_ALT A              &mt LEFT_CONTROL S  &kp D      &kp F                       &kp G                 &kp H        &kp J            &kp K      &kp L    &kp SQT
+&mt LEFT_CONTROL TAB  &mt LS(LA(LEFT_CONTROL)) Z  &kp X               &kp C      &kp V                       &kp B                 &kp N        &kp M            &kp COMMA  &kp DOT  &kp SLASH  &kp SEMICOLON
+                                                                      &powerCMD  &mt_hold LEFT_SHIFT ESCAPE  &mt LEFT_GUI SPACE    &lt 2 ENTER  &lt 1 BACKSPACE  &mo 4
             >;
         };
 
@@ -176,8 +170,8 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp AT           &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL          &kp LBRC       &kp GRAVE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE   &kp BACKSPACE
-        &kp EXCLAMATION  &kp UNDER      &kp MINUS         &kp EQUAL          &kp AMPS       &kp HASH   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH   &kp QUESTION
+        &kp AT           &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL          &kp LBRC       &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE   &kp BACKSPACE
+        &kp EXCLAMATION  &kp UNDER      &kp MINUS         &kp EQUAL          &kp AMPS       &kp HASH   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH   &kp QUESTION
 &trans  &kp STAR         &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT    &kp CARET  &kp COLON             &kp SEMI               &kp DOLLAR  &trans         &trans
                                         &trans            &trans             &trans         &mo 4      &kp KP_N0             &trans
             >;
