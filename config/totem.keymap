@@ -60,6 +60,16 @@
             key-positions = <23 24>;
             timeout-ms = <30>;
         };
+
+        Hyper1 {
+            bindings = <&kp LS(LA(LC(LG(NUMBER_1))))>;
+            key-positions = <36 16 17>;
+        };
+
+        Hyper2 {
+            bindings = <&kp LS(LA(LC(LG(NUMBER_2))))>;
+            key-positions = <36 17 18>;
+        };
     };
 
     macros {
