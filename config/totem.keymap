@@ -204,10 +204,10 @@
 
         fun_layer {
             bindings = <
-        &LockScreen  &CloseWindow    &mmv MOVE_UP    &ScreenShoot     &ReviveWindow    &trans  &trans  &trans  &trans  &trans
-        &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &trans  &trans  &trans  &trans  &trans
-&trans  &trans       &trans          &trans          &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans
-                                     &mkp MCLK       &mkp LCLK        &mkp RCLK        &trans  &trans  &trans
+        &LockScreen  &CloseWindow    &mmv MOVE_UP    &ScreenShoot     &ReviveWindow    &trans  &trans          &trans            &trans      &trans
+        &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &trans  &kp K_PREVIOUS  &kp K_PLAY_PAUSE  &kp K_NEXT  &trans
+&trans  &trans       &trans          &trans          &trans           &trans           &trans  &trans          &trans            &trans      &trans  &trans
+                                     &mkp MCLK       &mkp LCLK        &mkp RCLK        &trans  &trans          &trans
             >;
         };
 
