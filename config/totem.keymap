@@ -63,17 +63,17 @@
 
         Hyper1 {
             bindings = <&kp LS(LA(LC(LG(NUMBER_1))))>;
-            key-positions = <36 16 17>;
+            key-positions = <36 7 6>;
         };
 
         Hyper2 {
             bindings = <&kp LS(LA(LC(LG(NUMBER_2))))>;
-            key-positions = <36 17 18>;
+            key-positions = <36 16 17>;
         };
 
-        HyperToggle {
-            bindings = <&kp LS(LA(LG(LC(LEFT_CONTROL))))>;
-            key-positions = <33 11>;
+        Hyper3 {
+            bindings = <&kp LS(LA(LC(LG(NUMBER_3))))>;
+            key-positions = <36 28 27>;
         };
     };
 
