@@ -70,6 +70,11 @@
             bindings = <&kp LS(LA(LC(LG(NUMBER_2))))>;
             key-positions = <36 17 18>;
         };
+
+        HyperToggle {
+            bindings = <&kp LS(LA(LC(LEFT_CONTROL)))>;
+            key-positions = <33 11>;
+        };
     };
 
     macros {
@@ -99,6 +104,13 @@
             #binding-cells = <0>;
             bindings = <&kp LG(LS(T))>;
             label = "REVIVEWINDOW";
+        };
+
+        Meh: Meh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LEFT_CONTROL))>;
+            label = "MEH";
         };
     };
 
@@ -135,9 +147,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &mt LEFT_ALT TAB            &kp W               &kp E             &kp R                       &kp T                 &kp Y        &kp U            &kp I      &kp O    &kp P
-        &mt LS(LA(LEFT_CONTROL)) A  &mt LEFT_CONTROL S  &mt LEFT_SHIFT D  &kp F                       &kp G                 &kp H        &kp J            &kp K      &kp L    &kp SINGLE_QUOTE
-&trans  &lt 3 Z                     &kp X               &kp C             &kp V                       &kp B                 &kp N        &kp M            &kp COMMA  &kp DOT  &kp Q             &trans
+        &lt 3 TAB           &kp W                       &kp E             &kp R                       &kp T                 &kp Y        &kp U            &kp I      &kp O    &kp P
+        &mt LEFT_ALT A      &mt LS(LA(LEFT_CONTROL)) S  &mt LEFT_SHIFT D  &mt F LEFT_CONTROL          &kp G                 &kp H        &kp J            &kp K      &kp L    &kp SINGLE_QUOTE
+&trans  &mt LEFT_CONTROL Z  &kp X                       &kp C             &kp V                       &kp B                 &kp N        &kp M            &kp COMMA  &kp DOT  &mt LEFT_CONTROL Q  &trans
                                                         &trans            &mt_hold LEFT_SHIFT ESCAPE  &mt LEFT_GUI SPACE    &lt 2 ENTER  &lt 1 BACKSPACE  &trans
             >;
         };
@@ -183,10 +195,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &mt LEFT_ALT NUMBER_1  &kp NUMBER_2           &kp NUMBER_3              &kp NUMBER_4              &kp NUMBER_5          &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0
-        &trans                 &mt LEFT_CONTROL HOME  &mt LEFT_SHIFT PAGE_DOWN  &kp PAGE_UP               &kp END               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
-&trans  &trans                 &trans                 &trans                    &trans                    &trans                &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp MINUS      &trans
-                                                      &trans                    &mt LEFT_SHIFT BACKSPACE  &mt LEFT_GUI SPACE    &trans          &trans          &trans
+        &kp NUMBER_1      &kp NUMBER_2  &kp NUMBER_3              &kp NUMBER_4              &kp NUMBER_5          &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0
+        &kp LEFT_ALT      &kp HOME      &mt LEFT_SHIFT PAGE_DOWN  &kp PAGE_UP               &kp END               &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE
+&trans  &kp LEFT_CONTROL  &trans        &trans                    &trans                    &trans                &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp MINUS      &trans
+                                        &trans                    &mt LEFT_SHIFT BACKSPACE  &mt LEFT_GUI SPACE    &trans          &trans          &trans
             >;
         };
 
