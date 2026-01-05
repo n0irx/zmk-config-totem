@@ -72,7 +72,7 @@
         };
 
         HyperToggle {
-            bindings = <&kp LS(LA(LC(LEFT_CONTROL)))>;
+            bindings = <&kp LS(LA(LG(LC(LEFT_CONTROL))))>;
             key-positions = <33 11>;
         };
     };
