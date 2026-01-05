@@ -73,21 +73,6 @@
     };
 
     macros {
-        gif: gif {
-            label = "giphy";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp N2>,
-                <&macro_release>,
-                <&kp LSHFT>,
-                <&macro_tap>,
-                <&kp G &kp I &kp F>;
-        };
-
         LockScreen: LockScreen {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -118,13 +103,6 @@
     };
 
     behaviors {
-        powerCMD: powerCMD {
-            compatible = "zmk,behavior-tap-dance";
-            label = "POWERCMD";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI>, <&mo 3>;
-        };
-
         mt_hold: mt_hold {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_HOLD";
