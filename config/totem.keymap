@@ -171,9 +171,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp AT           &kp LESS_THAN  &kp GREATER_THAN  &kp EQUAL                 &kp LBRC       &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE   &kp BACKSPACE
+        &kp AT           &kp LESS_THAN  &kp GREATER_THAN  &kp BACKSLASH             &kp PIPE       &kp GRAVE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE   &kp BACKSPACE
         &kp EXCLAMATION  &kp UNDER      &kp MINUS         &kp EQUAL                 &kp AMPS       &kp HASH   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH   &kp QUESTION
-&trans  &kp STAR         &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET         &kp PERCENT    &kp CARET  &kp COLON             &kp SEMI               &kp DOLLAR  &trans         &trans
+&trans  &kp STAR         &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET         &kp PERCENT    &kp CARET  &kp COLON             &kp SEMI               &kp DOLLAR  &kp INT_YEN    &trans
                                         &trans            &mt LEFT_SHIFT BACKSPACE  &trans         &mo 4      &kp KP_N0             &trans
             >;
         };
