@@ -112,6 +112,13 @@
             bindings = <&kp LS(LA(LEFT_CONTROL))>;
             label = "MEH";
         };
+
+        QuitApp: QuitApp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(Q)>;
+            label = "QUITAPP";
+        };
     };
 
     behaviors {
@@ -205,7 +212,7 @@
         fun_layer {
             bindings = <
         &LockScreen  &CloseWindow    &mmv MOVE_UP    &ScreenShoot     &ReviveWindow    &trans  &trans             &trans           &trans  &kp K_PLAY_PAUSE
-        &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans           &trans  &kp K_PREVIOUS     &kp K_NEXT       &trans  &trans
+        &trans       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &QuitApp         &trans  &kp K_PREVIOUS     &kp K_NEXT       &trans  &trans
 &trans  &trans       &trans          &trans          &trans           &trans           &trans  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &trans  &trans            &trans
                                      &mkp MCLK       &mkp LCLK        &mkp RCLK        &trans  &trans             &trans
             >;
